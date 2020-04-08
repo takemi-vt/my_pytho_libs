@@ -70,6 +70,10 @@ class Cui():
 	@staticmethod
 	def strRGB( caption, r, g, b ):
 		sys.stdout.write( "\033[38;2;" + str(r) + ";" + str(g) + ";" + str(b) + "m" + caption + "\033[0m" )
+	
+	#カーソルをx,yの位置へ移動させる
+	def locate( x, y )
+		sys.stdout.write( "\033[38;2;" + str(y) + ";" + str(x)+ "H" )
 
 # text Code
 #インクルードして使うときは下記行を削除
